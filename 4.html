@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 4.html ----------------------------------------------------	     -->
+
+<section>
+  <h3>Types of learning problems</h3>
+  <div class="left-half">		      
+    <h5>Supervised learning</h5>
+    <img src="images/supervised1.png" />
+  </div>
+  
+  <div class=" fragment right-half" >		      
+    <h5>Unsupervised learning</h5>
+    <img src="images/unsupervised1.png" />
+  </div>
+
+</section>
+
+
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

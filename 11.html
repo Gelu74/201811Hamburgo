@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 11.html ----------------------------------------------------	     -->
+<section>
+  <h3>Learning deep learning</h3>
+    <ul>
+      <li> Andrew Ng. Coursera. www.deeplearning.ai</li>
+      <li> Jeremy Howard and Rachel Thomas. www.fast.ai </li>
+      <li> Fei-Fei Li. http://cs231n.stanford.edu/ </li>
+    </ul>
+    <div>
+    <div class="fragment absoluteblock  fade-in-then-out">
+      <img height="300" src="images/R1.png" />
+      <img height="300" src="images/R1.jpeg" />
+    </div>
+    <div class="fragment absoluteblock  fade-in-then-out">
+      <img height="300" src="images/R2.png" />
+    </div>
+    <div class="fragment absoluteblock  fade-in-then-out">
+      <img height="300" src="images/R3.png" />
+    </div>
+    </div>
+</section>
+
+<section>
+  <h3>Thanks</h3>
+</section>
+
+
+
+
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

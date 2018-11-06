@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 7.html ----------------------------------------------------	     -->
+<section>
+
+<section>
+  <h3>Image as inputs to neural network</h3>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img src="images/image_as_input.png" />
+  </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img src="images/convolution1.gif" />
+  </div>
+</section>
+
+<section>
+  <h3>Convolutional neural networks - CNNs</h3>
+  <div class="fragment absoluteblock fade-in">
+    <img src="images/vgg16.png" />
+    <div class="fragment">
+      Approximately 138 million parameters
+  </div>
+</section>
+
+
+
+</section>
+
+
+
+
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

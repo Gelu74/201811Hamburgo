@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 3.html -----------------------------------------------------		     -->
+
+<section>
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+  <div class="left-half">		      
+    <img src="images/DL_examples1.jpg" />
+  </div>
+
+  <div class="right-half">		      
+    <img src="images/DL_examples2.png" />
+  </div>
+</section>
+
+
+<section>
+  <h3>What is deep learning?</h3>
+    <img src="images/DL_examples2_1.jpg" />
+</section>
+
+
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+  <div class="left-half">		      
+    <img src="images/DL_examples3.png" />
+  </div>
+
+  <div class="right-half">		      
+    <img src="images/DL_examples4.png" />
+  </div>
+</section>
+
+
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+  <div class="left-half">		      
+    <img src="images/DL_examples5.png" />
+  </div>
+
+  <div class="right-half">		      
+    <img src="images/DL_examples6.jpg" />
+  </div>
+</section>
+
+
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+  <div class="left-half">		      
+    <img src="images/DL_examples7.png" />
+  </div>
+
+  <div class="right-half">		      
+    <img src="images/DL_examples8.jpg" />
+  </div>
+</section>
+
+
+
+
+
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+    <img src="images/DL_examples9.jpg" />
+</section>
+
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+  <div class="left-half">		      
+    <img src="images/DL_examples10.jpg" />
+  </div>
+
+  <div class="right-half">		      
+    <img src="images/DL_examples11.png" />
+  </div>
+</section>
+
+
+<section>
+<!-- <section data-transition="none"> -->
+  <h3>What is deep learning?</h3>
+    <img src="images/AIJobs.jpg" />
+</section>
+
+</section>
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

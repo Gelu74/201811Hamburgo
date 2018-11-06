@@ -1,0 +1,94 @@
+<html>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+}
+</script>
+
+		
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<title>  Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+		    <div w3-include-html="subsection.html"></div>
+
+		    <!-- <section> -->
+		    <!--   <video> -->
+		    <!-- 	<source data-src="assets/gradient.mp4" type="video/mp4" /> -->
+		    <!--   </video> -->
+		    <!-- </section>		     -->
+		    <!-- <section data-gif="repeat"><img src="assets/fig1.gif" /></section> -->
+		    <section>
+		      <h3>Deep Learning for marine research</h3>
+		      <video width="320" height="240" controls autoplay>
+		    	<source data-src="assets/gradient.mp4" type="video/mp4" />
+		      </video>
+
+		      
+		    <!-- <img src="assets/fig1.gif" /> -->
+		    <!-- <section data-gif="repeat"><img src="assets/fig1.gif" /></section> -->
+                    <!-- <h2><a href='introduction.html'>Introduction</a></h2> -->
+                    <!-- <h2><a href='applications.html'>Applications</a></h2> -->
+<div align="right">
+  <small><p>Ángel López-Urrutia</p>
+  <p>Centro Oceanográfico de Gijón</p>
+   <p>Instituto Español de Oceanografía</p></small>
+  <!-- <p>Contact information: <a href="mailto:someone@example.com">  someone@example.com</a>.</p> -->
+</div>
+
+		    </section>
+		    <section>Slide 2</section>
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

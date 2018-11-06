@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 2.html -----------------------------------------------------		     -->
+
+<section>
+  <h3>What is deep learning?</h3>
+  <div class="left-half">		      
+    <img src="images/AI.jpg" />
+  </div>
+  
+  <div class="right-half">		      
+    <!-- <div class="relativeblock"> -->
+      <div class="fragment absoluteblock fade-in-then-out">
+    	<font size="6">
+    	  <ul>
+    	    <li>A subdiscipline of machine learning in the field of artificial intelligence</li>
+    	    <li>A "rebranding" of artificial neural networks</li>
+    	  </ul>
+    	</font>
+      </div>
+      <div class="fragment absoluteblock fade-in-then-out">
+    	<font size="6">
+    	  Artificial intelligence (AI), “The theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages.”
+    	</font>
+      </div>
+
+      <div class="fragment">
+    	<font size="6">
+    	Machine Learning (ML) <br>
+    	Arthur Samuel (1959) “Field of study that gives computers the ability to learn without being explicitly programmed.”
+	<br>
+      </div>
+	<div class="fragment">
+    	ML is a subfield of computer science while Statistics is a subfield of mathematics.
+    	</font>
+      </div>
+  </div>
+  
+</section>
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

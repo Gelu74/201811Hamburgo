@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 6.html ----------------------------------------------------	     -->
+
+<section>
+  <h3>One-neuron example</h3>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img  height="300" width="1050" src="images/ols_1.jpg" />
+  </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img  height="300" width="1050" src="images/ols_2.jpg" />
+  </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" width="1050" src="images/ols_3.jpg" />
+  </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" width="1050" src="images/ols_4.jpg" />
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
+
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" width="1050" src="images/ols_5.jpg" />
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" width="1050" src="images/ols_6.jpg" />
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
+
+  <div class="fragment absoluteblock fade-in-then-out">
+  <video height="300" width="1050" controls autoplay>
+    <source data-src="images/oneneuron.mp4" type="video/mp4" />
+  </video>
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
+
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" src="images/neuron1.png" />
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
+
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" src="images/neuron1.png" />
+    <img width="500" src="images/singleneuron2.jpg" />
+  </div>
+
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" src="images/neuron1.png" />
+    <img width="500" src="images/singleneuron3.jpg" />
+  </div>
+
+  <div class="fragment absoluteblock">
+    <img height="300" src="images/neural_net2.jpeg" />
+    <img width="500" src="images/singleneuron3.jpg" />
+  </div>
+
+  
+</section>
+
+
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

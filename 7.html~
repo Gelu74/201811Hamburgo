@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 5.html ----------------------------------------------------	     -->
+<section>
+
+<section>
+  <h3>Image classification</h3>
+  <div class="fragment fade-in-then-out">
+    <img src="images/imagenet_1.png" />
+  </div>
+</section>
+
+<section>
+  <h3>Imagenet classification challenge</h3>
+	  <ul>
+	  <li>14 million images</li>
+	  <li>20 thousand categories</li>
+	  <li>Compete to reach best accuracy</li>
+	  </ul>
+  <div class="absoluteblock fragment fade-in-then-out">
+    <img src="images/imagenet2.jpeg" />
+  </div>
+  <div class="absoluteblock fragment">
+    <img src="images/imagenet_year.png" />
+  </div>
+</section>
+
+<section>
+  <h3>Image classification, detection and segmentation</h3>
+    <img src="images/Segmentation.jpeg" />
+</section>
+
+
+
+</section>
+
+
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

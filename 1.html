@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+<section>
+  <h3>Deep Learning for marine research</h3>
+		    <!-- <section data-gif="repeat"><img src="assets/fig1.gif" /></section> -->
+  
+  <div class="left-half">		      
+    <img src="images/neuronfiring.gif" />
+    <p> <font size="2"> Photo credit: Andy Moore @aaandmoore.</font> </p>
+  </div>
+  
+  <div class="right-half footnote">		      
+    <p class="fragment fade-out">
+    <small>
+      Ángel López-Urrutia<br>
+      Centro Oceanográfico de Gijón<br>
+      Instituto Español de Oceanografía<br>
+    </small>
+    </p>
+  </div>
+
+  <div class="right-half">		      
+    <p class="fragment">
+    <img src="images/neuron1.png" />
+    </p>
+    <small>
+	<div class="fragment">
+	  <ul>
+	  <li>Receive signals or information</li>
+	  <li>Integrate signals to determine whether or not information should be passsed along</li>
+	  <li>Communicate signals to target cells</li>
+	  <li class="fragment">Human brain: 86 000 000 000 neurons</li>
+	  </ul>
+	</div>
+    </small>
+    </p>
+  </div>
+</section>
+
+</section>
+
+
+
+
+</div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>

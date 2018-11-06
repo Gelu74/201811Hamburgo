@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/white.css"> -->
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+<!-- -------------------------------- 9.html ----------------------------------------------------	     -->
+<section>
+
+<section>
+  <h3>Kaggle - data science competitions</h3>
+  <div class="fragment absoluteblock fade-in-then-out">
+      <img height="500" src="images/kaggle1.png" />
+  </div>
+</section>
+
+<section>
+  <h3>Kaggle - data science bowls</h3>
+  <div class="left-half">		      
+      <img src="images/kaggledsb1.png" />
+  </div>
+
+  <div class="left-half">		      
+      <img src="images/kaggledsb1_2.png" />
+  </div>
+
+</section>
+
+
+<section>
+  <h3>Kaggle - data science bowls</h3>
+  <div class="left-half">		      
+      <img src="images/kaggledsb2018.png" />
+  </div>
+
+  <div class="left-half">		      
+      <img src="images/kaggledsb20182.png" />
+  </div>
+</section>
+
+
+
+<section>
+
+
+</section>
+
+</section>
+
+
+
+
+
+		  </div>
+		</div>
+		
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+
+		  Reveal.initialize();
+		</script>
+		<script>
+		  includeHTML();
+		</script>
+
+
+	</body>
+</html>
