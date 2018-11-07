@@ -116,12 +116,14 @@
 <section>
 <!-- <section data-transition="none"> -->
   <h3>What is deep learning?</h3>
+  <div class="fragment">
   <div class="left-half">
     <img src="images/DL_examples1.jpg" />
   </div>
 
   <div class="right-half">
     <img src="images/DL_examples2.png" />
+  </div>
   </div>
 </section>
 
@@ -284,6 +286,14 @@
     <img height="300" width="1050" src="images/ols_4.jpg" />
     <img width="500" src="images/singleneuron1.jpg" />
   </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" width="1050" src="images/ols_4_1.jpg" />
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
+  <div class="fragment absoluteblock fade-in-then-out">
+    <img height="300" width="1050" src="images/ols_4_2.jpg" />
+    <img width="500" src="images/singleneuron1.jpg" />
+  </div>
 
   <div class="fragment absoluteblock fade-in-then-out">
     <img height="300" width="1050" src="images/ols_5.jpg" />
@@ -296,7 +306,7 @@
 
   <div class="fragment absoluteblock fade-in-then-out">
   <!-- <video height="300" width="1050" controls autoplay> -->
-  <video controls autoplay>
+  <video controls>
     <source data-src="images/oneneuron.mp4" type="video/mp4" />
   </video>
     <img width="500" src="images/singleneuron1.jpg" />
@@ -334,9 +344,9 @@
     <img src="images/image_as_input.png" />
   </div>
   <div class="fragment absoluteblock fade-in-then-out">
-    <video controls autoplay>
+    <video controls>
       <source data-src="images/gradient.mp4" type="video/mp4" />
-    </video>
+    </video><br>
     Source: 3blue1brown
   </div>
   <div class="fragment absoluteblock fade-in-then-out">
@@ -576,6 +586,21 @@
 
 
 <!-- -------------------------------- 11.html ----------------------------------------------------	     -->
+
+<section>
+  <h3>Learning deep learning</h3>
+    <ul>
+      <li> Python is the lingua franca</li>
+      <img height="200" src="images/python.png" />
+      <img height="200" src="images/pytorch.jpeg" />
+      <img height="200" src="images/tensorflow.jpeg" />
+    </ul>
+    <div>
+    </div>
+</section>
+
+
+
 <section>
   <h3>Learning deep learning</h3>
     <ul>
@@ -624,7 +649,14 @@
 		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
 		  }
 		  }, false);
-
+		  Reveal.configure({
+		  keyboard: {
+		  37: 'prev',
+		  38: 'prev',
+		  39: 'next',
+		  40: 'next'
+		  }
+		  });
 		  Reveal.initialize();
 		</script>
 	</body>
